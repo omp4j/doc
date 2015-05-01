@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>extractor - omp4j - API reference - org.omp4j.extractor</title>
+          <meta name="description" content="extractor - omp4j - API reference - org.omp4j.extractor" />
+          <meta name="keywords" content="extractor omp4j API reference org.omp4j.extractor" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.omp4j.extractor.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.omp4j">omp4j</a></p>
+        <h1>extractor</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">extractor</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Parse tree properties extractors</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.omp4j.extractor"><span>extractor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.omp4j.extractor.AnonymousClassExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AnonymousClassExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.ClassBodyContext]]"></a>
+      <a id="AnonymousClassExtractor:AnonymousClassExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AnonymousClassExtractor.html"><span class="name">AnonymousClassExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.ClassBodyContext">ClassBodyContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts first-level classes from ANTLR4 ParseTree</p>
+    </li><li name="org.omp4j.extractor.ClassExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.ClassDeclarationContext]]"></a>
+      <a id="ClassExtractor:ClassExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassExtractor.html"><span class="name">ClassExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.ClassDeclarationContext">ClassDeclarationContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts first-level classes from ANTLR4 ParseTree</p>
+    </li><li name="org.omp4j.extractor.FieldClassExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FieldClassExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.ClassDeclarationContext]]"></a>
+      <a id="FieldClassExtractor:FieldClassExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FieldClassExtractor.html"><span class="name">FieldClassExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.ClassDeclarationContext">ClassDeclarationContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extract classes defined as field (nested ones)</p>
+    </li><li name="org.omp4j.extractor.FieldExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FieldExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.FieldDeclarationContext]]"></a>
+      <a id="FieldExtractor:FieldExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FieldExtractor.html"><span class="name">FieldExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.FieldDeclarationContext">FieldDeclarationContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extract class fields from ANTLR4 ParseTree, stop at any ClassDeclaration</p>
+    </li><li name="org.omp4j.extractor.FirstLevelBreakExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FirstLevelBreakExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.BreakStatementContext]]"></a>
+      <a id="FirstLevelBreakExtractor:FirstLevelBreakExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FirstLevelBreakExtractor.html"><span class="name">FirstLevelBreakExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.BreakStatementContext">BreakStatementContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts first-level classes from ANTLR4 ParseTree</p>
+    </li><li name="org.omp4j.extractor.FirstLevelContinueExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FirstLevelContinueExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.ContinueStatementContext]]"></a>
+      <a id="FirstLevelContinueExtractor:FirstLevelContinueExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FirstLevelContinueExtractor.html"><span class="name">FirstLevelContinueExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.ContinueStatementContext">ContinueStatementContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts first-level classes from ANTLR4 ParseTree</p>
+    </li><li name="org.omp4j.extractor.FirstLevelLocalVariableExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FirstLevelLocalVariableExtractorextendsJava8BaseVisitor[Set[org.omp4j.tree.OMPVariable]]"></a>
+      <a id="FirstLevelLocalVariableExtractor:FirstLevelLocalVariableExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FirstLevelLocalVariableExtractor.html"><span class="name">FirstLevelLocalVariableExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts all local variable declarations from ANTLR4 ParseTree with no statement pass</p>
+    </li><li name="org.omp4j.extractor.FirstLevelSuperExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FirstLevelSuperExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.SuperRuleContext]]"></a>
+      <a id="FirstLevelSuperExtractor:FirstLevelSuperExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FirstLevelSuperExtractor.html"><span class="name">FirstLevelSuperExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.SuperRuleContext">SuperRuleContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts first-level supers from ANTLR4 ParseTree</p>
+    </li><li name="org.omp4j.extractor.InnerClassExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InnerClassExtractorextendsJava8BaseVisitor[List[org.omp4j.grammar.Java8Parser.ClassDeclarationContext]]"></a>
+      <a id="InnerClassExtractor:InnerClassExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InnerClassExtractor.html"><span class="name">InnerClassExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.ClassDeclarationContext">ClassDeclarationContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts first-level classes from ANTLR4 ParseTree</p>
+    </li><li name="org.omp4j.extractor.LocalVariableExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocalVariableExtractorextendsJava8BaseVisitor[Set[org.omp4j.grammar.Java8Parser.LocalVariableDeclarationContext]]"></a>
+      <a id="LocalVariableExtractor:LocalVariableExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LocalVariableExtractor.html"><span class="name">LocalVariableExtractor</span></a><span class="result"> extends <span class="extype" name="org.omp4j.grammar.Java8BaseVisitor">Java8BaseVisitor</span>[<span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="org.omp4j.grammar.Java8Parser.LocalVariableDeclarationContext">LocalVariableDeclarationContext</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Extracts all local variable declarations from ANTLR4 ParseTree</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.omp4j.extractor.Inheritor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Inheritor"></a>
+      <a id="Inheritor:Inheritor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Inheritor$.html"><span class="name">Inheritor</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Tool for complicated inheritance problems.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>

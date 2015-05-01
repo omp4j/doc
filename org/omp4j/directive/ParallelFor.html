@@ -1,0 +1,1349 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>ParallelFor - omp4j - API reference - org.omp4j.directive.ParallelFor</title>
+          <meta name="description" content="ParallelFor - omp4j - API reference - org.omp4j.directive.ParallelFor" />
+          <meta name="keywords" content="ParallelFor omp4j API reference org.omp4j.directive.ParallelFor" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.omp4j.directive.ParallelFor';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../lib/class_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.omp4j">omp4j</a>.<a href="package.html" class="extype" name="org.omp4j.directive">directive</a></p>
+        <h1>ParallelFor</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ParallelFor</span><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a> with <a href="LockMemory.html" class="extype" name="org.omp4j.directive.LockMemory">LockMemory</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Parallel-for directive</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="LockMemory.html" class="extype" name="org.omp4j.directive.LockMemory">LockMemory</a>, <a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a>, <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.omp4j.directive.ParallelFor"><span>ParallelFor</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.omp4j.directive.LockMemory"><span>LockMemory</span></li><li class="in" name="org.omp4j.directive.ForCycle"><span>ForCycle</span></li><li class="in" name="org.omp4j.directive.Directive"><span>Directive</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+                <span class="filtertype">Implicitly<br />
+                </span>
+                <ol id="implicits"> <li class="in" name="scala.Predef.any2stringadd" data-hidden="true"><span>by any2stringadd</span></li><li class="in" name="scala.Predef.any2stringfmt" data-hidden="true"><span>by any2stringfmt</span></li><li class="in" name="scala.Predef.any2ArrowAssoc" data-hidden="true"><span>by any2ArrowAssoc</span></li><li class="in" name="scala.Predef.any2Ensuring" data-hidden="true"><span>by any2Ensuring</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.omp4j.directive.ParallelFor#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(parent:org.omp4j.directive.Directive,privateVars:List[String],firstPrivateVars:List[String])(implicitschedule:org.omp4j.directive.DirectiveSchedule.DirectiveSchedule,implicitthreadNum:String,implicitctx:org.omp4j.grammar.Java8Parser.StatementContext,implicitcmt:org.antlr.v4.runtime.Token,implicitline:Int,implicitconf:org.omp4j.Config):org.omp4j.directive.ParallelFor"></a>
+      <a id="&lt;init&gt;:ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ParallelFor</span><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Predef.any2stringadd#+" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="+(other:String):String"></a>
+      <a id="+(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="implicit">+</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.runtime.StringAdd">StringAdd</span> performed by method any2stringadd in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>StringAdd</dd></dl></div>
+    </li><li name="scala.Predef.any2ArrowAssoc#-&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="-&gt;[B](y:B):(A,B)"></a>
+      <a id="-&gt;[B](B):(ParallelFor,B)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2ArrowAssoc in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#addAtomicBool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addAtomicBool(baseName:String):String"></a>
+      <a id="addAtomicBool(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAtomicBool</span><span class="params">(<span name="baseName">baseName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Add java.</p><div class="fullcomment"><div class="comment cmt"><p>Add java.util.concurrent.atomic.AtomicBoolean into the storage
+</p></div><dl class="paramcmts block"><dt class="param">baseName</dt><dd class="cmt"><p>name of the item</p></dd><dt>returns</dt><dd class="cmt"><p>used name
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="LockMemory.html" class="extype" name="org.omp4j.directive.LockMemory">LockMemory</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#additionalItems" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="additionalItems:scala.collection.mutable.Set[String]"></a>
+      <a id="additionalItems:Set[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">additionalItems</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Storage for some additional elements</p><div class="fullcomment"><div class="comment cmt"><p>Storage for some additional elements</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#allChildren" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allChildren:List[org.omp4j.directive.Directive]"></a>
+      <a id="allChildren:List[Directive]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allChildren</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Transitive closure</p><div class="fullcomment"><div class="comment cmt"><p>Transitive closure</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#captured" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="captured:Set[org.omp4j.tree.OMPVariable]"></a>
+      <a id="captured:Set[OMPVariable]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">captured</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The captured variables, initialed later</p><div class="fullcomment"><div class="comment cmt"><p>The captured variables, initialed later</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#capturedThis" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="capturedThis:Boolean"></a>
+      <a id="capturedThis:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">capturedThis</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Is 'this' captured?</p><div class="fullcomment"><div class="comment cmt"><p>Is 'this' captured?</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#children" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="children:List[org.omp4j.directive.Directive]"></a>
+      <a id="children:List[Directive]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">children</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Directly nested directives</p><div class="fullcomment"><div class="comment cmt"><p>Directly nested directives</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#childrenOfType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="childrenOfType[T&lt;:org.omp4j.directive.Directive](implicitevidence$1:scala.reflect.ClassTag[T]):List[T]"></a>
+      <a id="childrenOfType[T&lt;:Directive](ClassTag[T]):List[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">childrenOfType</span><span class="tparams">[<span name="T">T &lt;: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="org.omp4j.directive.Directive.childrenOfType.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.omp4j.directive.Directive.childrenOfType.T">T</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Extract children of type T and return them as list of T</p><div class="fullcomment"><div class="comment cmt"><p>Extract children of type T and return them as list of T</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#classDeclar" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="classDeclar(implicitcaptured:Set[org.omp4j.tree.OMPVariable],implicitcapturedThis:Boolean,implicitdirectiveClass:org.omp4j.tree.OMPClass):String"></a>
+      <a id="classDeclar(Set[OMPVariable],Boolean,OMPClass):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">classDeclar</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>, <span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="directiveClass">directiveClass: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Class declaration</p><div class="fullcomment"><div class="comment cmt"><p>Class declaration</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#contextClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="contextClass:String"></a>
+      <a id="contextClass:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">contextClass</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Context class name</p><div class="fullcomment"><div class="comment cmt"><p>Context class name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#contextVar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="contextVar:String"></a>
+      <a id="contextVar:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">contextVar</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Context variable name</p><div class="fullcomment"><div class="comment cmt"><p>Context variable name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#deleteCmt" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteCmt(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter):Unit"></a>
+      <a id="deleteCmt(TokenStreamRewriter):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteCmt</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Delete directive comment from source code</p><div class="fullcomment"><div class="comment cmt"><p>Delete directive comment from source code</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#directiveClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="directiveClass:org.omp4j.tree.OMPClass"></a>
+      <a id="directiveClass:OMPClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">directiveClass</span><span class="result">: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Current directive class, initialed later</p><div class="fullcomment"><div class="comment cmt"><p>Current directive class, initialed later</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.Predef.any2Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a>
+      <a id="ensuring((ParallelFor)⇒Boolean,⇒Any):ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.any2Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:A=&gt;Boolean):A"></a>
+      <a id="ensuring((ParallelFor)⇒Boolean):ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.any2Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a>
+      <a id="ensuring(Boolean,⇒Any):ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.any2Ensuring#ensuring" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:Boolean):A"></a>
+      <a id="ensuring(Boolean):ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#exceptionName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exceptionName:String"></a>
+      <a id="exceptionName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exceptionName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Exception name</p><div class="fullcomment"><div class="comment cmt"><p>Exception name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#executor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executor:String"></a>
+      <a id="executor:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executor</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Context variable name</p><div class="fullcomment"><div class="comment cmt"><p>Context variable name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#executorBegin" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executorBegin(implicitcaptured:Set[org.omp4j.tree.OMPVariable]):String"></a>
+      <a id="executorBegin(Set[OMPVariable]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executorBegin</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"> First part of executor</p><div class="fullcomment"><div class="comment cmt"><p> First part of executor</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#executorClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executorClass:String"></a>
+      <a id="executorClass:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executorClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Runtime executor class.</p><div class="fullcomment"><div class="comment cmt"><p>Runtime executor class.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#executorEnd" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executorEnd:String"></a>
+      <a id="executorEnd:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executorEnd</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Closing task and executor</p><div class="fullcomment"><div class="comment cmt"><p>Closing task and executor</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#firstPrivateVars" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="firstPrivateVars:List[String]"></a>
+      <a id="firstPrivateVars:List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">firstPrivateVars</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.Predef.any2stringfmt#formatted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formatted(fmtstr:String):String"></a>
+      <a id="formatted(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">formatted</span><span class="params">(<span name="fmtstr">fmtstr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.runtime.StringFormat">StringFormat</span> performed by method any2stringfmt in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>StringFormat</dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.omp4j.directive.ForCycle#getBasicForStatement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getBasicForStatement(ctx:org.omp4j.grammar.Java8Parser.StatementContext):org.omp4j.grammar.Java8Parser.BasicForStatementContext"></a>
+      <a id="getBasicForStatement(StatementContext):BasicForStatementContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBasicForStatement</span><span class="params">(<span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>)</span><span class="result">: <span class="extype" name="org.omp4j.grammar.Java8Parser.BasicForStatementContext">BasicForStatementContext</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Extract basicForStatement or throw ParseException giving the reason of failure
+</p><div class="fullcomment"><div class="comment cmt"><p>Extract basicForStatement or throw ParseException giving the reason of failure
+</p></div><dl class="paramcmts block"><dt class="param">ctx</dt><dd class="cmt"><p>statement</p></dd><dt>returns</dt><dd class="cmt"><p>basicForStatement</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt">ParseException<p>if basicForStatement couldn't be extracted
+</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.omp4j.directive.ForCycle#getInit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getInit(basicForStatement:org.omp4j.grammar.Java8Parser.BasicForStatementContext)(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter):(String,org.omp4j.grammar.Java8Parser.ExpressionContext)"></a>
+      <a id="getInit(BasicForStatementContext)(TokenStreamRewriter):(String,ExpressionContext)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInit</span><span class="params">(<span name="basicForStatement">basicForStatement: <span class="extype" name="org.omp4j.grammar.Java8Parser.BasicForStatementContext">BasicForStatementContext</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.omp4j.grammar.Java8Parser.ExpressionContext">ExpressionContext</span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Extract init.</p><div class="fullcomment"><div class="comment cmt"><p>Extract init. part of the for-loop
+</p></div><dl class="paramcmts block"><dt class="param">basicForStatement</dt><dd class="cmt"><p>basicForStatement</p></dd><dt class="param">rewriter</dt><dd class="cmt"><p>ANTLR rewriter</p></dd><dt>returns</dt><dd class="cmt"><p>tuple of iterator name and for-loop init. context</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt">ParseException<p>if init. couldn't be extracted
+</p></span></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#getRewrittenText" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getRewrittenText(ctx:org.antlr.v4.runtime.tree.SyntaxTree)(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter):String"></a>
+      <a id="getRewrittenText(SyntaxTree)(TokenStreamRewriter):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRewrittenText</span><span class="params">(<span name="ctx">ctx: <span class="extype" name="org.antlr.v4.runtime.tree.SyntaxTree">SyntaxTree</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Wrapper of TokenStreamRewriter.</p><div class="fullcomment"><div class="comment cmt"><p>Wrapper of TokenStreamRewriter.getText(SyntaxTree) until it is officially supported</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ForCycle#getUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getUpdate(basicForStatement:org.omp4j.grammar.Java8Parser.BasicForStatementContext):org.omp4j.grammar.Java8Parser.StatementExpressionContext"></a>
+      <a id="getUpdate(BasicForStatementContext):StatementExpressionContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUpdate</span><span class="params">(<span name="basicForStatement">basicForStatement: <span class="extype" name="org.omp4j.grammar.Java8Parser.BasicForStatementContext">BasicForStatementContext</span></span>)</span><span class="result">: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementExpressionContext">StatementExpressionContext</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Extract update part of the for-loop
+</p><div class="fullcomment"><div class="comment cmt"><p>Extract update part of the for-loop
+</p></div><dl class="paramcmts block"><dt class="param">basicForStatement</dt><dd class="cmt"><p>basicForStatement</p></dd><dt>returns</dt><dd class="cmt"><p>for-loop update context</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt">ParseException<p>if update context doesn't meet the requirements
+</p></span></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#init" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="init(implicitcaptured:Set[org.omp4j.tree.OMPVariable],implicitcapturedThis:Boolean):String"></a>
+      <a id="init(Set[OMPVariable],Boolean):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">init</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>, <span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Initialization of captured variables + THAT</p><div class="fullcomment"><div class="comment cmt"><p>Initialization of captured variables + THAT</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#initPrivates" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initPrivates(implicitcaptured:Set[org.omp4j.tree.OMPVariable]):String"></a>
+      <a id="initPrivates(Set[OMPVariable]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initPrivates</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Private and firstprivate initialization</p><div class="fullcomment"><div class="comment cmt"><p>Private and firstprivate initialization</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#instance" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="instance:String"></a>
+      <a id="instance:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">instance</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Instance of context class</p><div class="fullcomment"><div class="comment cmt"><p>Instance of context class</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#iter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="iter:String"></a>
+      <a id="iter:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iter</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">1.</p><div class="fullcomment"><div class="comment cmt"><p>1. iterator name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#iter2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="iter2:String"></a>
+      <a id="iter2:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iter2</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">2.</p><div class="fullcomment"><div class="comment cmt"><p>2. iterator name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#iter3" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="iter3:String"></a>
+      <a id="iter3:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iter3</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">3.</p><div class="fullcomment"><div class="comment cmt"><p>3. iterator name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#parent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parent:org.omp4j.directive.Directive"></a>
+      <a id="parent:Directive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parent</span><span class="result">: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#parentOmpParallel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parentOmpParallel:org.omp4j.directive.ParallelFor"></a>
+      <a id="parentOmpParallel:ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parentOmpParallel</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Closest omp-parallel directive above (in the hierarchy) or null if none exists</p><div class="fullcomment"><div class="comment cmt"><p>Closest omp-parallel directive above (in the hierarchy) or null if none exists</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#postTranslate" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postTranslate(captured:Set[org.omp4j.tree.OMPVariable],capturedThis:Boolean,directiveClass:org.omp4j.tree.OMPClass)(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter):Unit"></a>
+      <a id="postTranslate(Set[OMPVariable],Boolean,OMPClass)(TokenStreamRewriter):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postTranslate</span><span class="params">(<span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>, <span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="directiveClass">directiveClass: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Second phase of the translation.</p><div class="fullcomment"><div class="comment cmt"><p>Second phase of the translation.</p><p>This method must be overridden by all extending classes. The real parallel invocation is created in
+this method.
+</p></div><dl class="paramcmts block"><dt class="param">captured</dt><dd class="cmt"><p>captured variables</p></dd><dt class="param">capturedThis</dt><dd class="cmt"><p>is 'this' captured?</p></dd><dt class="param">directiveClass</dt><dd class="cmt"><p>class in the hierarchy model</p></dd><dt class="param">rewriter</dt><dd class="cmt"><p>ANTLR rewriter
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#preTranslate" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preTranslate(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter,implicitompFile:org.omp4j.tree.OMPFile):(scala.collection.immutable.Set[org.omp4j.tree.OMPVariable],Boolean,org.omp4j.tree.OMPClass)"></a>
+      <a id="preTranslate(TokenStreamRewriter,OMPFile):(Set[OMPVariable],Boolean,OMPClass)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preTranslate</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>, <span name="ompFile">ompFile: <a href="../tree/OMPFile.html" class="extype" name="org.omp4j.tree.OMPFile">OMPFile</a></span>)</span><span class="result">: (<span class="extype" name="scala.collection.immutable.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>], <span class="extype" name="scala.Boolean">Boolean</span>, <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The first phase of the translation.</p><div class="fullcomment"><div class="comment cmt"><p>The first phase of the translation.</p><p>Capture all used variables and prepend them with context variable name via TranslationVisitor
+</p></div><dl class="paramcmts block"><dt class="param">rewriter</dt><dd class="cmt"><p>ANTLR rewriter</p></dd><dt class="param">ompFile</dt><dd class="cmt"><p>class hierarchy model</p></dd><dt>returns</dt><dd class="cmt"><p>tuple of captured variables, captured this and directive class
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#primitiveAssignments" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="primitiveAssignments(implicitcaptured:Set[org.omp4j.tree.OMPVariable]):String"></a>
+      <a id="primitiveAssignments(Set[OMPVariable]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">primitiveAssignments</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Assign primitive values</p><div class="fullcomment"><div class="comment cmt"><p>Assign primitive values</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#privateVars" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="privateVars:List[String]"></a>
+      <a id="privateVars:List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">privateVars</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#registerChild" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerChild(child:org.omp4j.directive.Directive):scala.collection.mutable.ListBuffer[org.omp4j.directive.Directive]"></a>
+      <a id="registerChild(Directive):ListBuffer[Directive]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerChild</span><span class="params">(<span name="child">child: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.ListBuffer">ListBuffer</span>[<a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Register child</p><div class="fullcomment"><div class="comment cmt"><p>Register child</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#secondIter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="secondIter:Boolean"></a>
+      <a id="secondIter:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">secondIter</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#secondIterInit" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="secondIterInit:String"></a>
+      <a id="secondIterInit:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">secondIterInit</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Initialization of 2.</p><div class="fullcomment"><div class="comment cmt"><p>Initialization of 2. iterator (if required)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#thatDecl" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="thatDecl(implicitcapturedThis:Boolean,implicitdirectiveClass:org.omp4j.tree.OMPClass):String"></a>
+      <a id="thatDecl(Boolean,OMPClass):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">thatDecl</span><span class="params">(<span class="implicit">implicit </span><span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="directiveClass">directiveClass: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Declaration of THAT (captured this)</p><div class="fullcomment"><div class="comment cmt"><p>Declaration of THAT (captured this)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#thatInit" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="thatInit(implicitcapturedThis:Boolean):String"></a>
+      <a id="thatInit(Boolean):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">thatInit</span><span class="params">(<span class="implicit">implicit </span><span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">THAT initialization</p><div class="fullcomment"><div class="comment cmt"><p>THAT initialization</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#threadArr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="threadArr:String"></a>
+      <a id="threadArr:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">threadArr</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Thread array name</p><div class="fullcomment"><div class="comment cmt"><p>Thread array name</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#threadCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="threadCount:String"></a>
+      <a id="threadCount:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">threadCount</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Number of threads [Shortcut]</p><div class="fullcomment"><div class="comment cmt"><p>Number of threads [Shortcut]</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#toAppend" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toAppend(implicitcaptured:Set[org.omp4j.tree.OMPVariable]):String"></a>
+      <a id="toAppend(Set[OMPVariable]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toAppend</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Code to be appended</p><div class="fullcomment"><div class="comment cmt"><p>Code to be appended</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#toPrepend" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toPrepend(implicitcaptured:Set[org.omp4j.tree.OMPVariable],implicitcapturedThis:Boolean,implicitdirectiveClass:org.omp4j.tree.OMPClass):String"></a>
+      <a id="toPrepend(Set[OMPVariable],Boolean,OMPClass):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPrepend</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>, <span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="directiveClass">directiveClass: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Code to be prepended</p><div class="fullcomment"><div class="comment cmt"><p>Code to be prepended</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Source code line and directive text</p><div class="fullcomment"><div class="comment cmt"><p>Source code line and directive text</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#translate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="translate(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter,implicitompFile:org.omp4j.tree.OMPFile,implicitdirectives:org.omp4j.preprocessor.DirectiveVisitor.DirectiveMap):Unit"></a>
+      <a id="translate(TokenStreamRewriter,OMPFile,DirectiveMap):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">translate</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>, <span name="ompFile">ompFile: <a href="../tree/OMPFile.html" class="extype" name="org.omp4j.tree.OMPFile">OMPFile</a></span>, <span name="directives">directives: <a href="../preprocessor/DirectiveVisitor$.html#DirectiveMap=scala.collection.immutable.ListMap[org.antlr.v4.runtime.tree.ParseTree,org.omp4j.directive.Directive]" class="extmbr" name="org.omp4j.preprocessor.DirectiveVisitor.DirectiveMap">DirectiveMap</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Translate this directive and delete the directive comment</p><div class="fullcomment"><div class="comment cmt"><p>Translate this directive and delete the directive comment</p><p>Invoke validation, preTranslate and postTranslate, in this particular order. Additionally, delete the
+comment and translate all nested directives that don't create their own context.
+</p></div><dl class="paramcmts block"><dt class="param">rewriter</dt><dd class="cmt"><p>ANTLR rewriter</p></dd><dt class="param">ompFile</dt><dd class="cmt"><p>class hierarchy model</p></dd><dt class="param">directives</dt><dd class="cmt"><p>all known directives mapped by their context
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ParallelFor#translateChildren" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="translateChildren(captured:Set[org.omp4j.tree.OMPVariable],capturedThis:Boolean,directiveClass:org.omp4j.tree.OMPClass)(implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter):Unit"></a>
+      <a id="translateChildren(Set[OMPVariable],Boolean,OMPClass)(TokenStreamRewriter):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">translateChildren</span><span class="params">(<span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>, <span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="directiveClass">directiveClass: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Translate directives of type Master, Single</p><div class="fullcomment"><div class="comment cmt"><p>Translate directives of type Master, Single</p></div><dl class="paramcmts block"><dt class="param">captured</dt><dd class="cmt"><p>captured variables
+</p></dd><dt class="param">capturedThis</dt><dd class="cmt"><p>is 'this' captured?
+</p></dd><dt class="param">directiveClass</dt><dd class="cmt"><p>class in the hierarchy model
+</p></dd><dt class="param">rewriter</dt><dd class="cmt"><p>ANTLR rewriter</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> → <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.ForCycle#translateFor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="translateFor(iter2:String,threadCount:String)(implicitctx:org.omp4j.grammar.Java8Parser.StatementContext,implicitrewriter:org.antlr.v4.runtime.TokenStreamRewriter):Unit"></a>
+      <a id="translateFor(String,String)(StatementContext,TokenStreamRewriter):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">translateFor</span><span class="params">(<span name="iter2">iter2: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="threadCount">threadCount: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Translate the for-loop.</p><div class="fullcomment"><div class="comment cmt"><p>Translate the for-loop.</p><p>Make for-loop run in parallel given the number of threads.
+</p></div><dl class="paramcmts block"><dt class="param">iter2</dt><dd class="cmt"><p>thread-iterator variable name</p></dd><dt class="param">threadCount</dt><dd class="cmt"><p>number of threads</p></dd><dt class="param">ctx</dt><dd class="cmt"><p>ANTLR context</p></dd><dt class="param">rewriter</dt><dd class="cmt"><p>ANTLR rewriter</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt">ParseException<p>if an error occurs
+</p></span></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#uniqueName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniqueName(baseName:String):String"></a>
+      <a id="uniqueName(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniqueName</span><span class="params">(<span name="baseName">baseName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generate an unique name (different from every token used and every loadable class)
+</p><div class="fullcomment"><div class="comment cmt"><p>Generate an unique name (different from every token used and every loadable class)
+</p></div><dl class="paramcmts block"><dt class="param">baseName</dt><dd class="cmt"><p>this string is tried at firsl</p></dd><dt>returns</dt><dd class="cmt"><p>new unique token, that is now registred
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#validate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validate(directives:org.omp4j.preprocessor.DirectiveVisitor.DirectiveMap):Unit"></a>
+      <a id="validate(DirectiveMap):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validate</span><span class="params">(<span name="directives">directives: <a href="../preprocessor/DirectiveVisitor$.html#DirectiveMap=scala.collection.immutable.ListMap[org.antlr.v4.runtime.tree.ParseTree,org.omp4j.directive.Directive]" class="extmbr" name="org.omp4j.preprocessor.DirectiveVisitor.DirectiveMap">DirectiveMap</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Directive validation.</p><div class="fullcomment"><div class="comment cmt"><p>Directive validation.</p><p>For valid directives returns nothing, for invalid ones throws an exception.</p></div><dl class="paramcmts block"><dt class="param">directives</dt><dd class="cmt"><p>all directives mapped by context</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt">SyntaxErrorException<p>if validation fails
+</p></span></dd></dl></div>
+    </li><li name="org.omp4j.directive.ForCycle#validateBasicForStatement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validateBasicForStatement(basicForStatement:org.omp4j.grammar.Java8Parser.BasicForStatementContext):Unit"></a>
+      <a id="validateBasicForStatement(BasicForStatementContext):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validateBasicForStatement</span><span class="params">(<span name="basicForStatement">basicForStatement: <span class="extype" name="org.omp4j.grammar.Java8Parser.BasicForStatementContext">BasicForStatementContext</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Check whether the statement is break/continue-free
+</p><div class="fullcomment"><div class="comment cmt"><p>Check whether the statement is break/continue-free
+</p></div><dl class="paramcmts block"><dt class="param">basicForStatement</dt><dd class="cmt"><p>basicForStatement</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt">ParseException<p>if break or continue is presented
+</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.omp4j.directive.Directive#wrap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wrap(rewriter:org.antlr.v4.runtime.TokenStreamRewriter)(implicitcaptured:Set[org.omp4j.tree.OMPVariable],implicitcapturedThis:Boolean,implicitdirectiveClass:org.omp4j.tree.OMPClass):Unit"></a>
+      <a id="wrap(TokenStreamRewriter)(Set[OMPVariable],Boolean,OMPClass):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wrap</span><span class="params">(<span name="rewriter">rewriter: <span class="extype" name="org.antlr.v4.runtime.TokenStreamRewriter">TokenStreamRewriter</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="captured">captured: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../tree/OMPVariable.html" class="extype" name="org.omp4j.tree.OMPVariable">OMPVariable</a>]</span>, <span name="capturedThis">capturedThis: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="directiveClass">directiveClass: <a href="../tree/OMPClass.html" class="extype" name="org.omp4j.tree.OMPClass">OMPClass</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Modify code according to toPrepend and toAppend</p><div class="fullcomment"><div class="comment cmt"><p>Modify code according to toPrepend and toAppend</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></dd></dl></div>
+    </li><li name="scala.Predef.any2ArrowAssoc#→" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="→[B](y:B):(A,B)"></a>
+      <a id="→[B](B):(ParallelFor,B)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2ArrowAssoc in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Shadowed Implicit Value Members</h3>
+              <ol><li name="scala.Predef.any2stringadd#self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="self:Any"></a>
+      <a id="self:Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit shadowed">self</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.runtime.StringAdd">StringAdd</span> performed by method any2stringadd in scala.Predef.
+            
+          </dd><dt class="implicit">Shadowing</dt><dd>This implicitly inherited member is ambiguous. One or more implicitly inherited members have similar signatures, so calling this member may produce an ambiguous implicit conversion compiler error.<br />To access this member you can use a <a href="http://stackoverflow.com/questions/2087250/what-is-the-purpose-of-type-ascription-in-scala" target="_blank">type ascription</a>:<br /><div class="cmt"><pre>(parallelFor: StringAdd).self</pre></div></dd><dt>Definition Classes</dt><dd>StringAdd</dd></dl></div>
+    </li><li name="scala.Predef.any2stringfmt#self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="self:Any"></a>
+      <a id="self:Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit shadowed">self</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.runtime.StringFormat">StringFormat</span> performed by method any2stringfmt in scala.Predef.
+            
+          </dd><dt class="implicit">Shadowing</dt><dd>This implicitly inherited member is ambiguous. One or more implicitly inherited members have similar signatures, so calling this member may produce an ambiguous implicit conversion compiler error.<br />To access this member you can use a <a href="http://stackoverflow.com/questions/2087250/what-is-the-purpose-of-type-ascription-in-scala" target="_blank">type ascription</a>:<br /><div class="cmt"><pre>(parallelFor: StringFormat).self</pre></div></dd><dt>Definition Classes</dt><dd>StringFormat</dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.Predef.any2ArrowAssoc#x" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="x:A"></a>
+      <a id="x:ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit shadowed deprecated" title="Deprecated: (Since version 2.10.0) Use leftOfArrow instead">x</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2ArrowAssoc in scala.Predef.
+            
+          </dd><dt class="implicit">Shadowing</dt><dd>This implicitly inherited member is ambiguous. One or more implicitly inherited members have similar signatures, so calling this member may produce an ambiguous implicit conversion compiler error.<br />To access this member you can use a <a href="http://stackoverflow.com/questions/2087250/what-is-the-purpose-of-type-ascription-in-scala" target="_blank">type ascription</a>:<br /><div class="cmt"><pre>(parallelFor: ArrowAssoc[ParallelFor]).x</pre></div></dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.10.0)</i> Use <code><u>leftOfArrow<code> instead</code></u></code></p></dd></dl></div>
+    </li><li name="scala.Predef.any2Ensuring#x" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="x:A"></a>
+      <a id="x:ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit shadowed deprecated" title="Deprecated: (Since version 2.10.0) Use resultOfEnsuring instead">x</span><span class="result">: <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit information</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>] performed by method any2Ensuring in scala.Predef.
+            
+          </dd><dt class="implicit">Shadowing</dt><dd>This implicitly inherited member is ambiguous. One or more implicitly inherited members have similar signatures, so calling this member may produce an ambiguous implicit conversion compiler error.<br />To access this member you can use a <a href="http://stackoverflow.com/questions/2087250/what-is-the-purpose-of-type-ascription-in-scala" target="_blank">type ascription</a>:<br /><div class="cmt"><pre>(parallelFor: Ensuring[ParallelFor]).x</pre></div></dd><dt>Definition Classes</dt><dd>Ensuring</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.10.0)</i> Use <code><u>resultOfEnsuring<code> instead</code></u></code></p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="org.omp4j.directive.LockMemory">
+              <h3>Inherited from <a href="LockMemory.html" class="extype" name="org.omp4j.directive.LockMemory">LockMemory</a></h3>
+            </div><div class="parent" name="org.omp4j.directive.ForCycle">
+              <h3>Inherited from <a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a></h3>
+            </div><div class="parent" name="org.omp4j.directive.Directive">
+              <h3>Inherited from <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        <div class="conversion" name="scala.Predef.any2stringadd">
+              <h3>Inherited by implicit conversion any2stringadd from
+                <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to <span class="extype" name="scala.runtime.StringAdd">StringAdd</span>
+              </h3>
+            </div><div class="conversion" name="scala.Predef.any2stringfmt">
+              <h3>Inherited by implicit conversion any2stringfmt from
+                <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to <span class="extype" name="scala.runtime.StringFormat">StringFormat</span>
+              </h3>
+            </div><div class="conversion" name="scala.Predef.any2ArrowAssoc">
+              <h3>Inherited by implicit conversion any2ArrowAssoc from
+                <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.any2Ensuring">
+              <h3>Inherited by implicit conversion any2Ensuring from
+                <a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="org.omp4j.directive.ParallelFor">ParallelFor</a>]
+              </h3>
+            </div>
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>

@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>directive - omp4j - API reference - org.omp4j.directive</title>
+          <meta name="description" content="directive - omp4j - API reference - org.omp4j.directive" />
+          <meta name="keywords" content="directive omp4j API reference org.omp4j.directive" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.omp4j.directive.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.omp4j">omp4j</a></p>
+        <h1>directive</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">directive</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.omp4j.directive.Atomic" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AtomicextendsCritical"></a>
+      <a id="Atomic:Atomic"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Atomic.html"><span class="name">Atomic</span></a><span class="result"> extends <a href="Critical.html" class="extype" name="org.omp4j.directive.Critical">Critical</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Atomic directive directly extending Critical directive</p>
+    </li><li name="org.omp4j.directive.Barrier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BarrierextendsDirectivewithProductwithSerializable"></a>
+      <a id="Barrier:Barrier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Barrier.html"><span class="name">Barrier</span></a><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>)</span><span class="params">(<span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Barrier directive</p>
+    </li><li name="org.omp4j.directive.Critical" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CriticalextendsDirective"></a>
+      <a id="Critical:Critical"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Critical.html"><span class="name">Critical</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Critical directive</p>
+    </li><li name="org.omp4j.directive.Directive" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DirectiveextendsAnyRef"></a>
+      <a id="Directive:Directive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Directive.html"><span class="name">Directive</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Abstract directive class representing the directive information and context</p>
+    </li><li name="org.omp4j.directive.For" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ForextendsDirectivewithForCyclewithProductwithSerializable"></a>
+      <a id="For:For"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="For.html"><span class="name">For</span></a><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">For</p>
+    </li><li name="org.omp4j.directive.ForCycle" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ForCycleextendsAnyRef"></a>
+      <a id="ForCycle:ForCycle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ForCycle.html"><span class="name">ForCycle</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Trait implementing for-loop operations</p>
+    </li><li name="org.omp4j.directive.LockMemory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LockMemoryextendsAnyRef"></a>
+      <a id="LockMemory:LockMemory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LockMemory.html"><span class="name">LockMemory</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">LockMemory trait complementing Directive</p>
+    </li><li name="org.omp4j.directive.Master" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MasterextendsDirective"></a>
+      <a id="Master:Master"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Master.html"><span class="name">Master</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Master directive</p>
+    </li><li name="org.omp4j.directive.NumThreads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NumThreadsextendsDirective"></a>
+      <a id="NumThreads:NumThreads"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NumThreads.html"><span class="name">NumThreads</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Number of threads attribute</p>
+    </li><li name="org.omp4j.directive.Parallel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParallelextendsDirectivewithLockMemorywithProductwithSerializable"></a>
+      <a id="Parallel:Parallel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Parallel.html"><span class="name">Parallel</span></a><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.antlr.v4.runtime.ParserRuleContext">ParserRuleContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <a href="LockMemory.html" class="extype" name="org.omp4j.directive.LockMemory">LockMemory</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Parallel directive</p>
+    </li><li name="org.omp4j.directive.ParallelFor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParallelForextendsDirectivewithForCyclewithLockMemorywithProductwithSerializable"></a>
+      <a id="ParallelFor:ParallelFor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParallelFor.html"><span class="name">ParallelFor</span></a><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <a href="ForCycle.html" class="extype" name="org.omp4j.directive.ForCycle">ForCycle</a> with <a href="LockMemory.html" class="extype" name="org.omp4j.directive.LockMemory">LockMemory</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Parallel-for directive</p>
+    </li><li name="org.omp4j.directive.Section" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SectionextendsDirectivewithProductwithSerializable"></a>
+      <a id="Section:Section"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Section.html"><span class="name">Section</span></a><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Section directive</p>
+    </li><li name="org.omp4j.directive.Sections" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SectionsextendsDirectivewithProductwithSerializable"></a>
+      <a id="Sections:Sections"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Sections.html"><span class="name">Sections</span></a><span class="params">(<span name="parent">parent: <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.omp4j.grammar.Java8Parser.StatementContext">StatementContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sections wrapper directive</p>
+    </li><li name="org.omp4j.directive.Single" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SingleextendsDirective"></a>
+      <a id="Single:Single"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Single.html"><span class="name">Single</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Single directive</p>
+    </li><li name="org.omp4j.directive.ThreadNum" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ThreadNumextendsDirective"></a>
+      <a id="ThreadNum:ThreadNum"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ThreadNum.html"><span class="name">ThreadNum</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Thread number attribute</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.omp4j.directive.Directive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Directive"></a>
+      <a id="Directive:Directive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Directive$.html"><span class="name">Directive</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Directive companion object</p>
+    </li><li name="org.omp4j.directive.DirectiveSchedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectiveSchedule"></a>
+      <a id="DirectiveSchedule:DirectiveSchedule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectiveSchedule$.html"><span class="name">DirectiveSchedule</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Enum representing possible directive schedule policies</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>
