@@ -89,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.omp4j.directive.Directive#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(parent:org.omp4j.directive.Directive,privateVars:List[String],firstPrivateVars:List[String])(implicitschedule:org.omp4j.directive.DirectiveSchedule.DirectiveSchedule,implicitthreadNum:String,implicitctx:org.antlr.v4.runtime.ParserRuleContext,implicitcmt:org.antlr.v4.runtime.Token,implicitline:Int,implicitconf:org.omp4j.Config):org.omp4j.directive.Directive"></a>
+      <a id="&lt;init&gt;(parent:org.omp4j.directive.Directive,privateVars:List[String],firstPrivateVars:List[String])(implicitschedule:org.omp4j.directive.DirectiveSchedule,implicitthreadNum:String,implicitctx:org.antlr.v4.runtime.ParserRuleContext,implicitcmt:org.antlr.v4.runtime.Token,implicitline:Int,implicitconf:org.omp4j.Config):org.omp4j.directive.Directive"></a>
       <a id="&lt;init&gt;:Directive"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,7 +97,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Directive</span><span class="params">(<span name="parent">parent: <a href="" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.antlr.v4.runtime.ParserRuleContext">ParserRuleContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span>
+        <span class="name">Directive</span><span class="params">(<span name="parent">parent: <a href="" class="extype" name="org.omp4j.directive.Directive">Directive</a></span>, <span name="privateVars">privateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="firstPrivateVars">firstPrivateVars: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="schedule">schedule: <a href="DirectiveSchedule.html" class="extype" name="org.omp4j.directive.DirectiveSchedule">DirectiveSchedule</a></span>, <span name="threadNum">threadNum: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ctx">ctx: <span class="extype" name="org.antlr.v4.runtime.ParserRuleContext">ParserRuleContext</span></span>, <span name="cmt">cmt: <span class="extype" name="org.antlr.v4.runtime.Token">Token</span></span>, <span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="conf">conf: <a href="../Config.html" class="extype" name="org.omp4j.Config">Config</a></span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">parent</dt><dd class="cmt"><p>the parent directive in hierarchy model</p></dd><dt class="param">privateVars</dt><dd class="cmt"><p>list of variable stated in private attribute</p></dd><dt class="param">firstPrivateVars</dt><dd class="cmt"><p>list of variable stated in firstprivate attribute</p></dd><dt class="param">schedule</dt><dd class="cmt"><p>schedule policy</p></dd><dt class="param">threadNum</dt><dd class="cmt"><p>thread number limitation</p></dd><dt class="param">ctx</dt><dd class="cmt"><p>directive body context of the statement</p></dd><dt class="param">cmt</dt><dd class="cmt"><p>AST of the comment</p></dd><dt class="param">line</dt><dd class="cmt"><p>approximate number of the line of the directive</p></dd><dt class="param">conf</dt><dd class="cmt"><p>configuration context
@@ -590,7 +590,7 @@ this method.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">executorClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">executorClass</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Runtime executor class.</p>
@@ -922,15 +922,15 @@ this method.
       </h4>
       <p class="shortcomment cmt">Register child</p>
     </li><li name="org.omp4j.directive.Directive#schedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="schedule:org.omp4j.directive.DirectiveSchedule.DirectiveSchedule"></a>
-      <a id="schedule:DirectiveSchedule.DirectiveSchedule"></a>
+      <a id="schedule:org.omp4j.directive.DirectiveSchedule"></a>
+      <a id="schedule:DirectiveSchedule"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">schedule</span><span class="result">: <a href="DirectiveSchedule$.html#DirectiveSchedule=org.omp4j.directive.DirectiveSchedule.Value" class="extmbr" name="org.omp4j.directive.DirectiveSchedule.DirectiveSchedule">DirectiveSchedule.DirectiveSchedule</a></span>
+        <span class="name">schedule</span><span class="result">: <a href="DirectiveSchedule.html" class="extype" name="org.omp4j.directive.DirectiveSchedule">DirectiveSchedule</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">schedule policy</p>
