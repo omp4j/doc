@@ -86,7 +86,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.omp4j.Config#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(args:Array[String],level:Int,runtimePath:String,runtimeClasses:List[String]):org.omp4j.Config"></a>
+      <a id="&lt;init&gt;(args:Array[String],level:Int,runtimePath:String,resourcePath:String,runtimeClasses:List[String]):org.omp4j.Config"></a>
       <a id="&lt;init&gt;:Config"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -94,7 +94,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Config</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="level">level: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="runtimePath">runtimePath: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="scala.StringContext.apply(&quot;org&quot;, &quot;omp4j&quot;, &quot;runtime&quot;).s(java.io.File.separator, java.io.File.separator)">...</span></span>, <span name="runtimeClasses">runtimeClasses: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="defval" name="immutable.this.List.apply[String](&quot;AbstractExecutor&quot;, &quot;DynamicExecutor&quot;, &quot;IOMPExecutor&quot;, &quot;StaticExecutor&quot;, &quot;StaticExecutor$1&quot;)">...</span></span>)</span>
+        <span class="name">Config</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="level">level: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="runtimePath">runtimePath: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="scala.StringContext.apply(&quot;org&quot;, &quot;omp4j&quot;, &quot;runtime&quot;).s(java.io.File.separator, java.io.File.separator)">...</span></span>, <span name="resourcePath">resourcePath: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="scala.StringContext.apply(&quot;org/omp4j/runtime&quot;).s()">...</span></span>, <span name="runtimeClasses">runtimeClasses: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="defval" name="immutable.this.List.apply[String](&quot;AbstractExecutor&quot;, &quot;DynamicExecutor&quot;, &quot;IOMPExecutor&quot;, &quot;StaticExecutor&quot;, &quot;StaticExecutor$1&quot;)">...</span></span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Setup new config context</p><div class="fullcomment"><div class="comment cmt"><p>Setup new config context</p></div><dl class="paramcmts block"><dt class="param">args</dt><dd class="cmt"><p>CLI arguments</p></dd><dt class="param">level</dt><dd class="cmt"><p>recursion level</p></dd><dt class="param">runtimePath</dt><dd class="cmt"><p>path of the runtime classes</p></dd><dt class="param">runtimeClasses</dt><dd class="cmt"><p>list of classes that are used in runtime
@@ -546,7 +546,7 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Loader for the JAR defined in prior methods</p>
-    </li><li name="org.omp4j.Config#logger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.omp4j.Config#logger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="logger:org.omp4j.log.Logger"></a>
       <a id="logger:Logger"></a>
       <h4 class="signature">
@@ -558,7 +558,7 @@
         <span class="name">logger</span><span class="result">: <a href="log/Logger.html" class="extype" name="org.omp4j.log.Logger">Logger</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Logger</p>
+      <p class="shortcomment cmt">Logger.</p><div class="fullcomment"><div class="comment cmt"><p>Logger. Instanced from the preprocessor when the JAR is ready.</p></div></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -626,6 +626,19 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Directory of preprocessed sources</p>
+    </li><li name="org.omp4j.Config#resourcePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resourcePath:String"></a>
+      <a id="resourcePath:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resourcePath</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
     </li><li name="org.omp4j.Config#runtimeClasses" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="runtimeClasses:List[String]"></a>
       <a id="runtimeClasses:List[String]"></a>

@@ -98,7 +98,6 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Create preprocessor for given files.</p><div class="fullcomment"><div class="comment cmt"><p>Create preprocessor for given files.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>the preprocessor configuration
-TODO: throws
 </p></dd></dl></div>
     </li></ol>
             </div>
@@ -481,14 +480,9 @@ TODO: throws
         <span class="name">run</span><span class="params">(<span name="firstRun">firstRun: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: (<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="java.io.File">File</span>], <span class="extype" name="scala.List">List</span>[(<span class="extype" name="java.io.File">File</span>, <span class="extype" name="java.io.File">File</span>)])</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Recursively translate all files until some directive exists.</p><div class="fullcomment"><div class="comment cmt"><p>Recursively translate all files until some directive exists.</p><p>New lifecycle, TODO: lifecycle
-- get config
-- get parseTree for each file (check exceptions)
-- remove threadId tokens and validate source using compiler
-- using previously parsed trees, make one level translation
-- run until a directive exists</p></div><dl class="paramcmts block"><dt class="param">firstRun</dt><dd class="cmt"><p>true if this is the first recursion level, false otherwise</p></dd><dt>returns</dt><dd class="cmt"><p>a tuple containing an array of translated files and the list of tuples of working and preprocessed directories
-TODO: throws
-</p></dd></dl></div>
+      <p class="shortcomment cmt">Recursively translate all files until some directive exists.</p><div class="fullcomment"><div class="comment cmt"><p>Recursively translate all files until some directive exists.</p><p>The work-flow of the preprocessor is as follows:</p><ul><li>Configuration creation (accept <code>conf</code>)</li><li>Code analysis</li><li>Directive recognition</li><li>Top-level directives translation (according to hierarchy model)</li><li>Saving the output</li><li>Recursive call</li></ul><p>The penultimate tuple of second list represents the directories where translated source files are really stored
+</p></div><dl class="paramcmts block"><dt class="param">firstRun</dt><dd class="cmt"><p>true if this is the first recursion level, false otherwise</p></dd><dt>returns</dt><dd class="cmt"><p>a tuple containing an array of translated files and the list of tuples of working and preprocessed directories</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt">CompilationException<p>if file cannot be compiled by Java compiler
+</p></span><span class="cmt">ParseException<p>if an parsing-related error occurred</p></span><span class="cmt">SyntaxErrorException<p>if syntax error in the directive occurred</p></span></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -529,7 +523,6 @@ TODO: throws
       </h4>
       <p class="shortcomment cmt">Validate sources passed.</p><div class="fullcomment"><div class="comment cmt"><p>Validate sources passed.</p><p>The method is not meant for external usage, however it may come in handy
 </p></div><dl class="paramcmts block"><dt class="param">parsed</dt><dd class="cmt"><p>An array of file and parsed AST properties</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt">CompilationException<p>if validation fails
-TODO: throws
 </p></span></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
